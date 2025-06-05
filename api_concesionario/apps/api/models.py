@@ -7,6 +7,7 @@ class Concesionario(models.Model):
     # Meta datos del modelo
     class Meta:
         verbose_name = 'Concesionario'
+        ordering = ['-id']
 
 
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False) # que el id no sea secuencial por seguridad en la base da datos
