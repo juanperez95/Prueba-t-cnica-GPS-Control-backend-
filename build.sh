@@ -6,7 +6,7 @@ set -o errexit
 pip install -r requirements.txt
 
 # Convert static asset files
-python api_concesionario/manage.py collectstatic --no-input
+cd api_concesionario && python manage.py collectstatic --no-input
 
 # Apply any outstanding database migrations
-python api_concesionario/manage.py migrate
+cd api_concesionario && python manage.py migrate

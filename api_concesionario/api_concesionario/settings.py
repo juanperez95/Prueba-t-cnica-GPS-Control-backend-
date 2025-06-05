@@ -149,4 +149,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Los sitios que tienen permisos para el CORS
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173", # local
+    "https://gpscontrol.netlify.app/", # netlify para el frontend
+    "https://gpscontrol.netlify.app" 
 ]
